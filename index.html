@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos - Caña de Azúcar en Tolima</title>
+    <style>
+        /* Estilos para el mapa */
+        iframe {
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        
+        /* Estilos para los videos */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .video-container iframe {
+            border: 5px solid #8B4513; /* Marco café */
+            border-radius: 10px;
+        }
+        
+        /* Estilos para la cronología */
+        .timeline {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        .timeline-item {
+            background-color: #f3f3f3;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid green;
+        }
+        
+        /* Estilos para la galería de imágenes */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body 
+    {background-color: black;
+    color: white;
+    }
+    </style>
+
+    <!-- Mapa de Zonas de Producción de Caña de Azúcar -->
+    <h1 style="text-align: center; text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+        Map of Sugarcane Production Zones
+    </h1>
+    
+    <iframe 
+      src="https://www.google.com/maps/d/embed?mid=1FW3zKzuQT33FqoNkOD749oXHPzZEIpY" 
+      width="1330" 
+      height="350"
+      style="border: 5px solid chocolate; border-radius: 10px;">
+    </iframe>
+
+    <!-- Título principal -->
+    <h1 style="text-align: center; text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+        Discover the Sweet Gastronomy of Tolima</h1>
+    <title>Acordeón de Imágenes - Carrusel</title>
+    <style>
+        .carousel-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Botones de navegación */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            transition: 0.3s;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel-slides">
+        <div class="carousel-slide">
+            <img src="imagenes/guarapocaña.jpg" alt="Campo de caña de azúcar">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/bocadillopanela.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/flanpanela.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/caipirinha.jpeg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/melcocha.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/melcochas.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/melcochass.png" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/aguapanela.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/panela.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/aguardientepanela.jpg" alt="Proceso de molienda">
+        </div>
+        <div class="carousel-slide">
+            <img src="imagenes/limonadapanela.jpeg" alt="Proceso de molienda">
+        </div>
+       
+        
+    </div>
+
+    <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+    <span class="next" onclick="moveSlide(1)">&#10095;</span>
+</div>
+
+<script>
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+        const slides = document.querySelector('.carousel-slides');
+        const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+</script>
+
+</body>
+</html>
+
+    <!-- Sección de Visita Virtual -->
+    <h1 style="text-align: center; text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+        Virtual Tour of the Sugar Cane Process</h1>
+    <div class="video-container">
+        <div>
+            <h2 style="text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+                Sugarcane Cultivation</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9wCO8aoBRgM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2 style="text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+                Panela Production</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/04BDa8pKTlY" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <style>
+        
+        .timeline {
+            color: black; /* Texto blanco para esta sección */
+            background-color: #333; /* Fondo oscuro para contraste */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        .timeline-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 5px solid green;
+        }
+    </style>
+
+    <!-- Sección de Cronología de la Caña de Azúcar -->
+    <h1 style="text-align: center; text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+        Chronology of Sugar Cane in Tolima</h1>
+    <ul class="timeline">
+        <li class="timeline-item">
+            <h3>1800s</h3>
+            <p>1800s: Sugar cane is introduced into the department of Tolima, especially in warm climate areas such as the San Juan Valley, Ortega and Chaparral.<br><br>
+                Late 1800s: The first sugar mills were built in the region, where panela and other sugarcane derivatives were produced for local consumption.</p>
+        </li>
+        <li class="timeline-item">
+            <h3>1900s</h3>
+            <p>1920s - 1940s: Sugar cane begins to be cultivated more extensively in Tolima. The mills are modernized and panela production becomes an important economic activity for the livelihood of many families.<br><br>
+                1950s: The Tolima region stands out as one of the largest producers of panela in Colombia. The rural economy of the department depends largely on the production of sugar cane and its derivatives.<br><br>
+                1970s - 1980s: With the creation of associations and cooperatives, sugarcane production in Tolima becomes more stable. Panela begins to be sold in other regions of Colombia.</p>
+        </li>
+        <li class="timeline-item">
+            <h3>2020</h3>
+            <p>2000s: Panela production in Tolima receives incentives for its national marketing and distribution. More sustainable techniques are promoted to improve performance and reduce environmental impact.<br><br>
+                2010s: Sugarcane continues to establish itself as one of Tolima's key agricultural products, and advanced technologies are implemented in sugar mills to optimize production.<br><br>
+                2020: Tolima continues to be a major producer of sugarcane in Colombia, and local communities keep alive the tradition of sugarcane products, such as panela, which remains a mainstay in the Colombian diet.</p>
+        </li>
+    </ul>
+
+    <!-- Sección de Galería de Imágenes -->
+    <h1 style="text-align: center; text-shadow: 1px 1px 0 black, -1px -1px 0 green, 1px -1px 0 black, -1px 1px 0 black;">
+        Image Gallery of Sugar Cane Processes in Tolima</h1>
+    <div class="gallery">
+        <img src="imagenes/campocaña.jpg" alt="Campo de caña de azúcar">
+        <img src="imagenes/campocañaa.jpg" alt="Campo de caña de azúcar">
+        <img src="imagenes/campoocaña.jpg" alt="Campo de caña de azúcar">
+        <img src="imagenes/moliendacaña.png" alt="Proceso de molienda">
+        <img src="imagenes/molienda.jpg" alt="Proceso de molienda">
+        <img src="imagenes/moliendaa.jpg" alt="Proceso de molienda">
+        <img src="imagenes/panelafinal.jpg" alt="Producto final: panela">
+        <img src="imagenes/panelafinall.jpg" alt="Producto final: panela">
+        <img src="imagenes/panelafinnal.jpg" alt="Producto final: panela">
+    </div>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8q2OoEsq-LGHDAP1Ihpa5gl67DMwaarJL9mtredR8B6ozCw/viewform?embedded=true" width="999" height="4000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+</body>
+</html>
